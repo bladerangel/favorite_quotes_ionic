@@ -6,12 +6,20 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { FavoritesPage } from '../pages/favorites/favorites';
+import { LibraryPage } from '../pages/library/library';
+import { QuotesPage } from '../pages/quotes/quotes';
+import { QuotePage } from '../pages/quote/quote';
+import { SeetingsPage } from '../pages/seetings/seetings';
 
 
 @NgModule({
   declarations: [
     MyApp,
-    FavoritesPage
+    FavoritesPage,
+    LibraryPage,
+    QuotesPage,
+    QuotePage,
+    SeetingsPage
   ],
   imports: [
     BrowserModule,
@@ -20,12 +28,16 @@ import { FavoritesPage } from '../pages/favorites/favorites';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    FavoritesPage
+    FavoritesPage,
+    LibraryPage,
+    QuotesPage,
+    QuotePage,
+    SeetingsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
