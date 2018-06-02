@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 
-import { Quote } from '@angular/compiler';
 import quotes from '../../data/quotes';
+import { Quote } from '../../data/quote.interface';
 
 @IonicPage()
 @Component({
@@ -11,10 +11,10 @@ import quotes from '../../data/quotes';
 })
 export class LibraryPage implements OnInit {
 
-  quotesCollection: { category: string, quotes: Quote[], icon: string }[];
+  quoteCollection: { category: string, quotes: Quote[], icon: string }[];
 
   ngOnInit(): void {
-    this.quotesCollection = quotes;
+    this.quoteCollection = quotes;
   }
 
 }
