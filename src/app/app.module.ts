@@ -10,6 +10,7 @@ import { LibraryPage } from '../pages/library/library';
 import { QuotesPage } from '../pages/quotes/quotes';
 import { QuotePage } from '../pages/quote/quote';
 import { SeetingsPage } from '../pages/seetings/seetings';
+import { TabsPage } from '../pages/tabs/tabs';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SeetingsPage } from '../pages/seetings/seetings';
     LibraryPage,
     QuotesPage,
     QuotePage,
-    SeetingsPage
+    SeetingsPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SeetingsPage } from '../pages/seetings/seetings';
     LibraryPage,
     QuotesPage,
     QuotePage,
-    SeetingsPage
+    SeetingsPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
