@@ -8,8 +8,6 @@ import { MyApp } from './app.component';
 import { QuotesPage } from '../pages/quotes/quotes';
 import { QuotePage } from '../pages/quote/quote';
 import { SeetingsPage } from '../pages/seetings/seetings';
-import { TabsPage } from '../pages/tabs/tabs';
-
 
 @NgModule({
   declarations: [
