@@ -16,8 +16,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     QuotesPage,
     QuotePage,
-    SeetingsPage,
-    TabsPage
+    SeetingsPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +28,6 @@ import { TabsPage } from '../pages/tabs/tabs';
     QuotesPage,
     QuotePage,
     SeetingsPage,
-    TabsPage
   ],
   providers: [
     StatusBar,
