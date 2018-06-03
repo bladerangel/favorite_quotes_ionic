@@ -36,8 +36,8 @@ export class FavoritesPage {
     this.quotes = this.quotesProvider.getFavoriteQuotes();
   }
 
-  getBackground() {
-    return this.settingsProvider.isAltBackground() ? 'altQuoteBackground' : 'quoteBackground';
+  isAltBackground(){
+    return this.settingsProvider.isAltBackground();
   }
 
 }
