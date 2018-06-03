@@ -6,12 +6,12 @@
     </ion-header>
     <ion-content>
         <ion-list>
-            <button ion-item>
-                <ion-icon name="quote" item-left (click)="onLoad(TabsPage)"></ion-icon>
+            <button ion-item (click)="onLoad('TabsPage')">
+                <ion-icon name="quote" item-left></ion-icon>
                 Quotes
             </button>
-            <button ion-item>
-                <ion-icon name="settings" item-left (click)="onLoad(SettingsPage)"></ion-icon>
+            <button ion-item (click)="onLoad('SettingsPage')">
+                <ion-icon name="settings" item-left></ion-icon>
                 Settings
             </button>
         </ion-list>
