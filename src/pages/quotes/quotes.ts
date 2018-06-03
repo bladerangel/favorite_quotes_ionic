@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavParams, AlertController } from 'ionic-angular';
 
 import { Quote } from '../../data/quote.interface';
+import { QuotesProvider } from '../../providers/quotes/quotes';
 
 @IonicPage()
 @Component({
@@ -12,7 +13,7 @@ export class QuotesPage implements OnInit {
 
   quoteGroup: { category: string, quotes: Quote[], icon: string };
 
-  constructor(private navParams: NavParams, private alertCtrl: AlertController) { }
+  constructor(private navParams: NavParams, private alertCtrl: AlertController, private quotesProvider: QuotesProvider) { }
 
   ngOnInit() {
     this.quoteGroup = this.navParams.data;
@@ -27,7 +28,8 @@ export class QuotesPage implements OnInit {
         {
           text: 'Yes, go ahead',
           handler: () => {
-            console.log('Ok');
+            this.quotesProvider.addQuoteToFavorite(selectedQuote);
+            console.log(this.quotesProvider.getFavoriteQuotes());
           }
         },
         {
